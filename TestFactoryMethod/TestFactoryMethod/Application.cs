@@ -16,11 +16,19 @@ namespace TestFactoryMethod
 
             //IMarket mkt = CreateMarket(); //Factory Method
 
-            //MarketCreator mc = new ConcreteMarketCreator();
-            //IMarket mkt = mc.Create(2); //Parameterised Factory Method
+            //IMarket mkt = Market.ParameterisedCreate(2); //Parameterised Factory Method by static method
 
-            Creator gc = new GenericCreator<Market1>(); //Generic Creator
-            IMarket mkt = gc.Create();
+            //using creator ? = delegation
+            //Creator c1 = new ParameterisedCreator(); //Parameterised Factory Method using Creator
+            //IMarket mktA = c1.Create(2); 
+
+            //Creator c2 = new GenericCreator<Market1>(); //Factory Method using Generic Creator
+            //IMarket mktB = c2.Create(); //Factory Method
+
+            
+        
+            
+
         }
 
         private IMarket CreateMarket() //Factory Method

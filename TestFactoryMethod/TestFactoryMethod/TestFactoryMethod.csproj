@@ -48,10 +48,10 @@
     <Compile Include="Derivative.cs" />
     <Compile Include="Futures.cs" />
     <Compile Include="IMarket.cs" />
+    <Compile Include="Market.cs" />
     <Compile Include="Market1.cs" />
     <Compile Include="Market2.cs" />
     <Compile Include="Market3.cs" />
-    <Compile Include="MarketCreator.cs" />
     <Compile Include="Option.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

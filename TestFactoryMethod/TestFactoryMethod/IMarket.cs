@@ -9,5 +9,6 @@ namespace TestFactoryMethod
     {   
         void Create();
         void Display();
+        void Add(Tradable t);
     }
 }

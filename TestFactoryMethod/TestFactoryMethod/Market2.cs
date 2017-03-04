@@ -16,7 +16,14 @@ namespace TestFactoryMethod
             Add(t2);
 
             Tradable t3 = new Option("CLPF7_100C", "0002", 2017, 1, 100, 'C');
-            Add(t3);
+            Add(t3);            
         }
+
+        public override void Display()
+        {
+            Console.WriteLine("This is Market2");
+            base.Display();
+        }
+
     }
 }

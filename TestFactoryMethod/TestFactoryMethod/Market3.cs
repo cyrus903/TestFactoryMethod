@@ -7,10 +7,15 @@ namespace TestFactoryMethod
 {
     class Market3 : IMarket //Empty Market
     {
-        public void Create()
+        public  void Create()
+        {
+            Tradable t = new Security("0003");
+            Add(t);
+        }
+        public  void Display()
         {
         }
-        public void Display()
+        public  void Add(Tradable t)
         {
         }
     }

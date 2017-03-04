@@ -15,9 +15,10 @@ namespace TestFactoryMethod
         {
             Create();
             Display();
+            
         }
 
-        public virtual void Create()
+        public virtual  void Create()
         {              
             Tradable t = new Security("0001");            
             Add(t);
@@ -30,12 +31,12 @@ namespace TestFactoryMethod
             Add(t3);
         }
 
-        protected void Add(Tradable t)
+        public  void Add(Tradable t)
         {
              array.Add(t);
         }
 
-        public void Display()
+        public virtual void Display()
         {
             foreach (object o in array)
             {
